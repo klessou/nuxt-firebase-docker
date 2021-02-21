@@ -6,12 +6,15 @@ A quite simple docker container to start with vue, nuxt and firebase.
 
 ``` bash
 # Clone the repository
-https://github.com/klessou/nuxt-firebase-docker
+# https://github.com/klessou/nuxt-firebase-docker
 
 git clone git@github.com:klessou/nuxt-firebase-docker.git
 cd nuxt-firebase-docker
 
 # If you already have a nuxt project, put it in app folder
+
+# If your want to start a project from scratch you can do this command before
+docker-compose run web vue init nuxt-community/starter-template .
 
 # Start the container
 docker-compose up -d
